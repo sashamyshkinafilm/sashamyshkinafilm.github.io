@@ -1,0 +1,149 @@
+/*sets whole body font to montserrat*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 300;
+}
+
+/*font formatting*/
+h1 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+h3 {
+    color: #041aa5;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/*centers logo, also makes it small*/
+.centerlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+}
+
+/*black video rectangle*/
+#rectangle {
+    width: 1000px;
+    height: 540px;
+    background:black;
+}
+
+/* navbar style */
+.navbar {
+    width: 100%;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+/*links*/
+.navbar a {
+    float: center;
+    padding: 40px;
+    text-decoration: none;
+    font-size: 30px;
+    width: 15%; 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 300;
+}
+
+/*bold and blue on hover*/
+.navbar a:hover {
+    color: #041aa5;
+    font-weight: 500;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+    color: #041aa5;
+    font-weight: 500;
+}
+
+/*responsiveness-menu stacks on smaller screens*/
+@media screen and (max-width: 500px) {
+    .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+}
+
+/*socials bar style*/
+.socials {
+    width: 100%;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+/*links*/
+.socials a {
+    float: center;
+    padding: 30px;
+    width: 15%;
+    align: center;
+}
+
+.container {
+    position: relative;
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.image {
+    display: block;
+    float: center;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 600px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #041aa5;
+    float: center
+}
+  
+.container:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+
+
+p {
+    font-size: 25px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
